@@ -1,0 +1,18 @@
+<p>Now is <%= Time.now %><p>
+
+
+<h2>Meet our team</h2>
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member.capitalize %></li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Back to Meet 🚀 team", about_path %>
+
+
+<form action="/contact" method="get">
+  <input type="text" name="member" value="<%= params[:member] %>" placeholder="Who are you looking for?">
+  <input type="submit">
+</form>
