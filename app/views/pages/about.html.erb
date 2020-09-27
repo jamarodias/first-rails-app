@@ -1,2 +1,25 @@
 <h1>Our first view 🚀</h1>
 <%= link_to "Meet our team", contact_path %>
+
+
+<%# código do site https://www.homehost.com.br/blog/criar-sites/formulario-html/ %>
+<form>
+  <input type="button" value="Clique Aqui" onclick="msg()">
+</form>
+
+<script>
+function msg() {
+  alert("Você clicou no botão! dica do site https://www.homehost.com.br/blog/criar-sites/formulario-html/");
+}
+</script>
+
+
+
+<%= link_to "Go back home", home_path %>
+
+
+<form>
+    <input type="checkbox" name="veiculo1" value="bicicleta">Eu tenho uma bicicleta<br>
+    <input type="checkbox" name="veiculo2" value="carro">Eu tenho um carro<br>
+    <input type="checkbox" name="veiculo3" value="moto">Eu tenho uma moto
+</form>
